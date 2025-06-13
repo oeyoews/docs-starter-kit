@@ -4,8 +4,8 @@ import UnoCSS from 'unocss/vite';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'docs starter kit',
-  description: 'docs site',
+  title: '项目文档',
+  description: '',
   vite: {
     plugins: [UnoCSS()],
   },
