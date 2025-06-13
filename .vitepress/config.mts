@@ -6,6 +6,7 @@ import UnoCSS from 'unocss/vite';
 export default defineConfig({
   title: '项目文档',
   description: '',
+  appearance: 'dark',
   vite: {
     plugins: [UnoCSS()],
   },
