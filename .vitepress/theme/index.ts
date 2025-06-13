@@ -15,15 +15,15 @@ export default {
     });
   },
   enhanceApp({ app, router, siteData }) {
-    // const inBrowser = typeof window !== 'undefined';
-    // if (inBrowser) {
-    BProgress.configure({ showSpinner: false });
-    router.onBeforeRouteChange = () => {
-      BProgress.start(); // 开始进度条
-    };
-    router.onAfterRouteChange = () => {
-      BProgress.done(); // 停止进度条
-    };
-    // }
+    const inBrowser = typeof window !== 'undefined';
+    if (inBrowser) {
+      BProgress.configure({ showSpinner: false });
+      router.onBeforeRouteChange = () => {
+        BProgress.start(); // 开始进度条
+      };
+      router.onAfterRouteChange = () => {
+        BProgress.done(); // 停止进度条
+      };
+    }
   },
 } satisfies Theme;
