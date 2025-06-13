@@ -1,17 +1,18 @@
 export default [
   {
-    text: 'Project01',
+    text: '📁 开始',
     collapsed: false, // 默认折叠
     items: [
-      { text: 'Project01 Docs', link: '/src/project-01/index.md' },
-      { text: 'Project02 Docs', link: '/src/project-01/01.md' }
-    ]
+      { text: '📄 安装', link: '/src/project-01/index.md' },
+      { text: '📄 开发', link: '/src/project-01/01.md' },
+    ],
   },
   {
-    text: 'Module',
+    text: '🧩 模块',
     collapsed: false, // 默认折叠
-    items: [
-      { text: 'Project01 module', link: '/src/project-01/module' }
-    ]
+    items: [{ text: '📦 模块1', link: '/src/project-01/module' }],
   },
-]
+  {
+    items: [{ text: '❓ FAQ', link: '/src/project-01/faq.md' }],
+  },
+];
