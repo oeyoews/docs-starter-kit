@@ -1,5 +1,7 @@
 import projectSidebar from './sidebar/project01';
 import project02Sidebar from './sidebar/project02';
+import aiSidebar from './sidebar/ai';
+
 import { type DefaultTheme } from 'vitepress';
 
 export default {
@@ -9,6 +11,11 @@ export default {
       text: '📁 项目一',
       link: '/src/project-01',
       activeMatch: '/src/project-01/',
+    },
+    {
+      text: '📁 Langchain',
+      link: '/src/ai',
+      activeMatch: '/src/ai/',
     },
     {
       text: '📁 项目二',
@@ -32,5 +39,6 @@ export default {
     ],
     '/src/project-01': projectSidebar,
     '/src/project-02': project02Sidebar,
+    '/src/ai': aiSidebar,
   },
 } as DefaultTheme.Config;
