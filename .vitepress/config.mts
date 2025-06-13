@@ -1,10 +1,14 @@
 import { defineConfig } from 'vitepress';
 import routes from './routes.mts';
+import UnoCSS from 'unocss/vite';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'docs starter kit',
   description: 'docs site',
+  vite: {
+    plugins: [UnoCSS()],
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     ...routes,
