@@ -3,7 +3,7 @@ import { defineConfig, presetIcons, presetUno } from 'unocss';
 
 export default defineConfig({
   presets: [
-    // presetUno(),
+    presetUno(),
     presetIcons({
       scale: 1.2,
       warn: true,
