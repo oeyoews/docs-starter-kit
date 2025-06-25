@@ -10,10 +10,6 @@ export const navs = [
   },
   {
     text: '📁 项目一',
-    link: '/src/project-01',
-  },
-  {
-    text: '📁 项目二',
-    link: '/src/project-02',
+    link: '/src/project01',
   },
 ];

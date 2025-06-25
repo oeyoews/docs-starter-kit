@@ -1,10 +1,8 @@
 import { generateNavs } from './utils/index';
-import { navs } from './sidebar/navs';
-import projectSidebar from './sidebar/project01';
-import project02Sidebar from './sidebar/project02';
-import aiSidebar from './sidebar/ai';
+import { navs } from './nav';
 
 import { type DefaultTheme } from 'vitepress';
+import { sidebars } from './sidebar';
 
 export default {
   nav: [
@@ -26,8 +24,6 @@ export default {
         items: [{ text: '👋 欢迎', link: '/' }],
       },
     ],
-    '/src/project-01': projectSidebar,
-    '/src/project-02': project02Sidebar,
-    '/src/ai': aiSidebar,
+    ...sidebars,
   },
 } as DefaultTheme.Config;
