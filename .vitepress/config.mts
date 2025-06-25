@@ -1,11 +1,12 @@
 import { defineConfig } from 'vitepress';
 import routes from './routes.mts';
 import UnoCSS from 'unocss/vite';
+import { siteConfig } from './sidebar/config';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: '项目文档',
-  description: '',
+  title: siteConfig.title,
+  description: siteConfig.title,
   appearance: 'dark',
   vite: {
     plugins: [UnoCSS()],

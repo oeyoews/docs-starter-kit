@@ -20,7 +20,7 @@ layout: home
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-<div class="text-5xl font-bold mb-10 text-gray-900 dark:text-white text-center">Docs Starter Kit</div>
+<div class="text-5xl font-bold mb-10 text-gray-900 dark:text-white text-center">文档站</div>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center max-w-6xl mx-auto">
   <div class="rounded-xl bg-gradient-to-br from-blue-100/80 to-blue-300/60 dark:from-blue-900/60 dark:to-blue-700/40 backdrop-blur p-8 flex flex-col items-start min-h-48 shadow-lg">
